@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Use correct character set. -->
+	<meta charset="utf-8">
+	<!-- Tell IE to use the latest, best version. -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>Production_1 - Cesium 3D Tiles generated from Bentley ContextCapture</title>
+	<link rel="stylesheet" type="text/css" href="Resources/main.css"/>
+	<script src="Cesium/Cesium.js"></script>
+	<!--引用video.js播放m3u8格式视频-->
+	<link href="https://unpkg.com/video.js@6.11.0/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js@6.11.0/dist/video.min.js"></script>
+    <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+	<style>
+		@import url(Cesium/Widgets/widgets.css);
+	</style>
+</head>
+<body  class="flex">
+	<div id="cesiumContainer"></div>
+	<div class="trailer " id='moveBar'>
+		<div class="title" id="banner">
+			<div class="titletxt">
+				洞口
+			</div>
+			<div class="titlecha "> 
+				<img src="Cesium/Assets/Textures/maki/cross.png"/>
+				<!--<img src="Cesium/Assets/Textures/maki/camera.png"/>-->
+			</div>
+		</div>
+		<video id="my-video" autoplay="autoplay" class="video-js" controls preload="auto" poster="" data-setup='{}'>
+			<!--<source src="https://cesiumjs.org/videos/Sandcastle/big-buck-bunny_trailer.mp4" type="video/mp4">-->
+		    <source class="videosce" type='application/x-mpegURL' src="http://kj.rsltek.com:8080/stream/kj-rsltek-com-5553-streaming-channels-102/index.m3u8"></source>
+		    <p class="vjs-no-js">
+		        To view this video please enable JavaScript, and consider upgrading to a web browser that
+		        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+		  	</p>
+		</video>
+	</div>
+
+	<div class="toolbar">
+		<input type="checkbox" name="video" id="video" value="checked"/>
+		<label for="video">视频监控位置显示</label>
+		<input type="checkbox" name="envir" id="envir" value="checked"/>
+		<label for="envir">环境监控位置显示</label>
+		<!--<input type="checkbox" name="B2" id="B2" value="checked"/>
+		<label for="video1">B2</label>
+		<input type="checkbox" name="C2" id="C2" value="checked"/>
+		<label for="video1">C2</label>-->
+	</div>
+	<div class="loading imgflex">
+		<img src="Resources/yellow-loading.gif"/>
+		<div class="loadingtxt">
+			加载中...
+		</div>
+	</div>
+	<div class="kaijin imgflex">
+		<img src="Resources/kj.png"/>
+	</div>
+	<script src="jquery.js"></script>
+	<script src="main.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,29 @@
+html, body, #cesiumContainer {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+/*.list{position: fixed;top: 0;left: 0;z-index: 9999;}*/
+.trailer{position: absolute;top: 75px;right: 0;display: none;width: 640px;}
+#my-video{width: 640px;height: 360px;}
+.flex{display: flex;justify-content: flex-start;align-content: center;}
+.left{position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 180px;background: red;}
+.imgflex{display: flex;align-items: center;justify-content: center;}
+img{width: 100%;}
+.title{position: relative;background: white;border-bottom: 1px solid #eee;}
+.titletxt{font-size: 16px;text-align: center;width: 100%;height: 40px;line-height: 40px;}
+.titlecha{width: 15px;position: absolute;top: 50%;right: 10px;transform: translateY(-50%);}
+.toolbar{position: fixed;top: 10px;left: 10px;background: rgba(255,255,255,0.2);padding: 5px;border-radius: 4px;color: white;}
+.cesium-credit-image a img{width: 150px;}
+.loading{position: fixed;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);width: 100px;height: 100px;background: rgba(0,0,0,0.6);border-radius: 10px;display: none;}
+.loadingtxt{width: 100%;font-size: 12px;color: #EFEFEF;text-align: center;letter-spacing: 1px;}
+label{margin-right: 20px;}
+.kaijin{position: fixed;left: 0;bottom: 0;width: 300px;background: rgba(0,0,0,1);}
+#moveBar {position: absolute;top: 70px;right: 0;background: black;color：white;border: solid 1px #000;}
+#banner {background: #ddd;cursor: move;}
